@@ -1,0 +1,287 @@
+/* General Styles */
+.landingPage {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.landingPage__hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.landingPage__heroImage {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.landingPage__heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+.landingPage__heroTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.landingPage__donationForm {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.landingPage__formGroup {
+  margin-bottom: 15px;
+}
+
+.landingPage__formLabel {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.landingPage__formSelect,
+.landingPage__formInput,
+.landingPage__formTextarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.landingPage__formButton {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.landingPage__formButton:hover {
+  background-color: #1a242f;
+}
+
+/* Charities Section */
+.landingPage__charities {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.landingPage__sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.landingPage__scrollContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.landingPage__charitiesList {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: 100%;
+}
+
+.landingPage__charityCard {
+  min-width: 250px;
+  margin: 0 15px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.landingPage__charityImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.landingPage__charityName {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+.landingPage__charityDescription {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.landingPage__donateButton {
+  display: inline-block;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.landingPage__donateButton:hover {
+  background-color: #1a242f;
+}
+
+.landingPage__arrow {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.landingPage__arrow--left {
+  left: -40px;
+}
+
+.landingPage__arrow--right {
+  right: -40px;
+}
+
+/* About Us Section */
+.landingPage__about {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.landingPage__aboutContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.landingPage__aboutText {
+  flex: 1;
+  margin: 20px;
+}
+
+.landingPage__aboutImage {
+  flex: 1;
+  margin: 20px;
+}
+
+.landingPage__aboutImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.landingPage__beneficiaryStory {
+  background-color: #f5f7fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.landingPage__storyTitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.landingPage__storyContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.landingPage__storyImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.landingPage__storyText {
+  flex: 1;
+}
+
+/* Contact Section */
+.landingPage__contact {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.landingPage__contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.landingPage__subscription {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+
+.landingPage__subscriptionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.landingPage__subscriptionForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPage__subscriptionInput {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.landingPage__subscriptionButton {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.landingPage__subscriptionButton:hover {
+  background-color: #1a242f;
+}

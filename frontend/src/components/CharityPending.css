@@ -1,0 +1,15 @@
+/* CharityPending.css */
+.charity-pending-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .charity-pending-container h1 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .charity-pending-container p {
+    color: #555;
+  }
+  

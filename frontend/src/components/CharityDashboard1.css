@@ -1,0 +1,170 @@
+/* CharityDashboard1.css */
+
+.uniqueCharityDashboard {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  background-color: #f5f7fa; /* Light background for contrast */
+  padding:30px ;
+}
+
+.uniqueSidebar {
+  width: 18%; /* Slightly reduced width to give more space to content */
+  background-color: #a2a7af;
+  padding: 40px;
+  position: fixed; /* Fixes the sidebar in place */
+  height: 100vh; /* Full height of the viewport */
+  overflow-y: auto; /* Adds scrolling if the sidebar content overflows */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.uniqueSidebarTitle {
+  color: #18191a;
+  font-size: 1.5em;
+  margin-bottom: 30px; /* More space below the title */
+  text-align: center; /* Centered title for better aesthetics */
+}
+
+.uniqueSidebarList {
+  list-style: none;
+  padding: 0;
+}
+
+.uniqueSidebarItem {
+  margin-bottom: 15px; /* Increased space between items */
+}
+
+.uniqueSidebarLink {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.uniqueSidebarLink:hover {
+  background-color: #34495e; /* Darker background on hover */
+}
+
+.uniqueMainContent {
+  width: 78%; /* Adjusted width for more space and balance */
+  margin-left: 22%; /* Increased margin to give more breathing room */
+  padding: 40px; /* More padding for a spacious feel */
+  overflow-y: auto; /* Ensures the content scrolls */
+  height: 100vh; /* Full height of the viewport */
+  box-sizing: border-box; /* Ensures padding does not affect width/height */
+  background-color: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* White background for the main content */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+.uniqueMainHeading {
+  font-size: 2.5em; /* Larger heading */
+  color: #34495e;
+  margin-bottom: 30px;
+  text-align: center; /* Centered heading for better focus */
+}
+
+.uniqueMainWelcome {
+  font-size: 1.4em;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  position: relative; /* Allows it to move with the scroll */
+  text-align: justify; /* Justify text for a clean look */
+}
+
+.uniqueMainButton {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.uniqueMainButton:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+}
+
+.uniqueCharityDetails {
+  margin-bottom: 50px; /* More space between sections */
+}
+
+.uniqueSectionHeading {
+  font-size: 2em; /* Larger section headings */
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.uniqueSectionParagraph {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  position: relative; /* Allows it to move with the scroll */
+  line-height: 1.6; /* Better line spacing for readability */
+  text-align: justify; /* Justify text for a clean look */
+}
+
+.uniqueCharityImage {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+}
+
+.uniqueDonors,
+.uniqueBeneficiaries,
+.uniqueStories {
+  margin-bottom: 50px; /* More space between sections */
+}
+
+.uniqueDonorSection,
+.uniqueBeneficiaryItem,
+.uniqueStoryItem {
+  margin-bottom: 25px;
+}
+
+.uniqueTotalAmount {
+  margin-top: 30px;
+}
+
+.uniqueSubHeading {
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.uniqueInput,
+.uniqueTextarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.uniqueStoryTitle {
+  font-size: 1.4em;
+  color: #2c3e50;
+}
+
+.uniqueStoryImage {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.uniqueEditBeneficiary,
+.uniqueAddBeneficiary,
+.uniquePostStory {
+  margin-top: 30px;
+  font-size: 1.1em;
+}

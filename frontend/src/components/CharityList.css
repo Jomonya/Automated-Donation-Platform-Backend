@@ -1,0 +1,92 @@
+/* Container for the entire CharityList component */
+.charity-list {
+  padding: 70px; /* Increase padding for more space */
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Background gradient */
+  min-height: 100vh; /* Ensure it takes up at least the full viewport height */
+  position: relative; /* Needed for sticky heading */
+}
+
+/* Heading for the charity list */
+.charity-list h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  background: #f5f7fa; /* Background color to ensure readability */
+  padding: 10px 0; /* Padding around the heading */
+  z-index: 10; /* Ensure it stays above other content */
+}
+
+/* Flex container for charity list items */
+.charity-list ul {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  gap: 20px; /* Space between items */
+  margin-top: 60px; /* Extra space to accommodate sticky heading */
+}
+
+/* Individual charity list item styling */
+.charity-list li {
+  background-color: #fff; /* White background for each item */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  width: calc(33.333% - 20px); /* Adjust width to fit three items per row with spacing */
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+/* Charity list item hover effect */
+.charity-list li:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Charity image styling */
+.charity-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Rounded corners for image */
+  margin-bottom: 15px;
+}
+
+/* Charity name styling */
+.charity-list h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Charity description styling */
+.charity-list p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Donate button styling */
+.charity-list .donate-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2c3e50; /* Uniform color to match login page */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.charity-list .donate-button:hover {
+  background-color: #2980b9; /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slight zoom effect */
+}

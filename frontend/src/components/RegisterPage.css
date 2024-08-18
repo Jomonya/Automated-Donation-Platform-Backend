@@ -1,0 +1,141 @@
+/* Ensure the navbar is placed on top of the sidebar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar is on top */
+}
+
+/* Container and Sidebar styles */
+.register-container {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 60px; /* Adjust to make room for the navbar */
+  background-color: #f5f7fa; /* Light background for the entire container */
+}
+
+.register-sidebar {
+  width: 220px; /* Sidebar width */
+  background-color: #2c3e50;
+  padding: 20px;
+  position: fixed;
+  top: 60px; /* Adjust to start below the navbar */
+  bottom: 0;
+  left: 0;
+  color: #ecf0f1; /* Sidebar text color */
+  z-index: 900; /* Ensure sidebar is below the navbar */
+  border-top-right-radius: 30px; /* Rounded top right corner */
+  border-bottom-right-radius: 30px; /* Rounded bottom right corner */
+  overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+}
+
+/* Optional: Add a curved effect at the top-right and bottom-right corners */
+.register-sidebar::before {
+  content: "";
+  position: absolute;
+  top: -30px; /* Position above the top edge */
+  right: -30px; /* Position outside the right edge */
+  width: 60px;
+  height: 60px;
+  background: #2c3e50;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #2c3e50 inset; /* Creates the arc effect */
+}
+
+.register-sidebar::after {
+  content: "";
+  position: absolute;
+  bottom: -30px; /* Position below the bottom edge */
+  right: -30px; /* Position outside the right edge */
+  width: 60px;
+  height: 60px;
+  background: #2c3e50;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #2c3e50 inset; /* Creates the arc effect */
+}
+
+/* Styles for the sidebar content */
+.register-sidebar h2 {
+  margin-top: 0;
+  color: #ecf0f1;
+  font-size: 22px;
+}
+
+.register-sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.register-sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.register-sidebar nav ul li a {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 18px;
+}
+
+.register-sidebar nav ul li a:hover {
+  color: #2980b9;
+}
+
+/* Form Container styles */
+.register-form-container {
+  margin-left: 240px; /* Adjust to account for the sidebar width */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Adjust the maximum width of the form container */
+  margin: 60px auto; /* Margin at the top to make room for the navbar */
+}
+
+.register-form-container h1 {
+  margin-top: 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.register-form-group {
+  margin-bottom: 20px;
+}
+
+.register-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+  font-size: 16px;
+}
+
+.register-form-group input,
+.register-form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.register-form-group select {
+  background-color: #ffffff;
+}
+
+/* Unique button styling */
+.register-submit-button {
+  background-color: #2c3e50;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.register-submit-button:hover {
+  background-color: #34495e;
+}
