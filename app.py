@@ -12,7 +12,18 @@ from datetime import datetime
 from models import db, Charity, User, Donation, Beneficiary, BeneficiaryStory
 
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    static_url_path='',
+    static_folder='..frontend/build',
+    template_folder='..frontend/build'
+)
+
+...
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("index.html")
 api = Api(app)
 
 bcrypt = Bcrypt(app)
