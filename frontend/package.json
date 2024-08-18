@@ -4,6 +4,7 @@
   "proxy": "http://127.0.0.1:5000",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^0.0.0",
     "@paypal/react-paypal-js": "^8.5.0",
     "@reduxjs/toolkit": "^2.2.7",
     "@testing-library/jest-dom": "^5.17.0",
@@ -19,6 +20,7 @@
     "react-stripe-checkout": "^2.6.3",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.9",
+    
     "web-vitals": "^2.1.4"
   },
   "scripts": {
